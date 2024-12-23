@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "CocktailApp",
+    "slug": "CocktailApp",
+    "version": "1.1.2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "com.jrizki.cocktailapp",
+      "buildNumber": "12",
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "description": "A curated cocktail recipe app",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4b2fafe8-fef8-4c8d-9754-5aad0d166d79"
+      }
+    },
+    "android": {
+      "package": "com.jrizki.cocktailapp",
+      "versionCode": 5
+    }
+  }
+}
