@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'gotham';
+  src: url('/font/GothamMedium.ttf');
+}
+@font-face {
+  font-family: 'gotham-light';
+  src: url('/font/GothamLight.ttf');
+}
+/*@font-face {
+  font-family: 'georgia';
+  src: url('/font/Georgia.ttf');
+}
+@font-face {
+  font-family: 'georgia-r';
+  src: url('/font/Georgia-Regular.ttf');
+}
+*/
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0px 0px 200px 0px;
+}
+.movie-1 {
+  background-color: black;
+  margin-top: 20px;
+  width: 80%;
+  
+  padding: 65px 0px 65px 0px;
+  display: flex;
+  align-items: stretch;     
+  justify-content: space-between;
+}
+
+.movie {
+  background-color: black;
+  margin-top: 0em;
+  width: 100%;
+  height: 100%;
+  padding: 65px 0px 65px 0px;
+  display: flex;
+  
+  
+}
+.section-heading {
+  font-family: 'gotham-medium', sans-serif;
+    padding: 160px 0em 50px 40px;
+    color: white;
+    font-size: 60px;
+    display: block;
+    font-weight: 345;
+    line-height: 49px;
+    font-weight: bold;
+    
+}
+.section-heading-1 {
+  font-family: 'gotham-medium', sans-serif;
+  padding:70px 0em 40px 40px;
+    color: white;
+    font-size: 60px;
+    display: block;
+    font-weight: 345;
+    line-height: 49px;
+    font-weight: bold;
+    
+}
+.box {
+  /*background-color: tomato;  */
+  color: white;
+  
+  
+}
+
+.full {
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+}
+.about {
+    background-color: black;
+  margin-bottom: 66px;
+  
+  padding: 0px 0em 0px 10px;
+
+}
+
+.two-third {
+  width: 50%;
+  padding: 0 50px 0 50px;
+
+
+}
+.one-third {
+  width: 50%;
+  align-self: center;
+  padding: 0 50px 0 50px;
+}
+.one-third h2 {
+  font-size: 45px;
+  font-family: 'georgia', sans-serif;
+  font-weight: lighter;
+  
+}
+
+.one-third p {
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img-wrapper-movie {
+  
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0, 1);
+  overflow: hidden;
+}
+
+.img-wrapper-movie img {
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+ 
+  
+}
+
+.title {
+  font-family: 'georgia', sans-serif;
+    font-size: 3rem;
+    color: #D7AB39;
+  margin: 3rem 0;
+  
+}
+span {
+  color: #D7AB39;
+  text-decoration: underline;
+
+}
+.info {
+  margin: 50px 30px;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+
+.solid {
+  margin: 65px 0 65px 0;
+}
+
+.movie-text {
+  font-family: 'georgia', sans-serif;
+    font-size: 20px;
+    color: #D7AB39;
+  margin: 0.5rem 0 4rem 0;
+  
+  
+}
+.movie-text-right {
+  text-align: left;
+  
+}
+.blurb {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 2rem 0;
+  font-family: 'Arial', sans-serif;
+  font-weight: 200;
+}
+
+.movie-text-left {
+  text-align: left;
+  font-size: 32px;
+    color: #D7AB39;
+    
+ 
+  
+}
+.movie-1 button {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: clip-path 0.5s;
+}
+.movie button {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: clip-path 0.5s;
+}
+
+.box button:hover {
+  clip-path: polygon(
+    40% 15%,
+    77% 15%,
+    100% 10%,
+    100% 90%,
+    75% 85%,
+    40% 85%,
+    30% 100%,
+    0 50%,
+    0 50%,
+    30% 0
+  );
+}
+@media (max-width: 4000px) {
+    .mobile-1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+  .section-heading {
+    font-size: 60px;
+  }
+  .section-heading-1 {
+    font-size: 60px;
+  }
+  .one-third h2 {
+    font-size: 32px;
+  }
+  .one-third p {
+    font-size: 16px;
+  }
+  .info {
+    font-size:16px;
+  }
+}
+@media (max-width: 1200px) {
+  .section-heading {
+    font-size: 40px;
+    margin-top: 150px;
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+  }
+  .section-heading-1 {
+    font-size: 40px;
+    margin-top: 150px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+  }
+}
+
+/* end of podcsat movies */
+@media (max-width: 900px) {
+    .movie-1 {
+        flex-direction: column;
+        padding: 0px;
+        height: auto;
+    }
+    .two-third {
+        width: 100%;
+    }
+    .one-third {
+        width: 80%;
+        text-align: center;
+    }
+    .one-third h2 {
+        text-align: center;
+    }
+    .one-third p {
+        text-align: center;
+    }
+    .movie {
+        flex-direction: column;
+        padding: 0px;
+        padding: 0px;
+        height: auto;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile-1 {
+        display: block;
+    }
+    .section-heading {
+      font-size: 40px;
+      margin-top: 100px;
+      padding: 20px 0px 64px 0px;
+      text-align: center;
+    }
+    .section-heading-1 {
+      font-size: 40px;
+      
+      padding: 20px 0px 20px 0px;
+      text-align: center;
+      margin-top: 44px;
+    }
+    .info {
+      text-align: center;
+    }
+        
+    
+    }
+    
+    @media (max-width: 550px) {
+      .section-heading {
+        font-size: 30px;
+        margin-top: 150px;
+        padding: 0px 0px 20px 0px;
+        text-align: center;
+      }
+      .section-heading-1 {
+        font-size: 30px;
+        margin-top: -14px;
+        padding: 20px 0px 20px 0px;
+        text-align: center;
+      }
+      .info {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .section-heading {
+        font-size: 30px;
+        margin-top: 80px;
+        padding: 0px 0px 20px 0px;
+        text-align: center;
+      }
+      
+      .movie-text {
+        
+        margin: 4rem 0 4rem 0;
+        
+        
+      }
+      .about {
+        padding: 0 1em 0 1em;
+      }
+      .one-third {
+        width: 100%;
+      }
+      .social-list a {
+        margin: 0 1rem;
+    }
+    
+    }
+
+  

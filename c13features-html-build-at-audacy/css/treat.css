@@ -1,0 +1,411 @@
+/* basic styles */
+body {
+    background-color: #080621;
+}
+main {
+    max-width: 1440px;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+  
+  .container {
+    overflow: hidden;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* basic styles end */
+  /* Header */
+  
+  .header {
+    margin-top: 0rem;
+    height: 100%;
+    position: relative;
+    perspective: 100rem;
+    overflow: hidden;
+  }
+  
+  .banner {
+    position: absolute;
+    top: 307px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 40%;
+  }
+  
+  .img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0, 1);
+    overflow: hidden;
+  }
+  
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+  }
+  
+  .med-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    display: none;
+  }
+  
+  .small-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    display: none;
+  }
+  
+  /* Header end */
+  /* subscribe */
+  
+  #album-info .album-info-body {
+    
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    
+  }
+  
+  .mobile {
+    display: none ;
+  }
+  
+  h3.section-title {
+    font-size: 30px;
+    color:#FE9213;
+    text-align: center;
+    font-family: 'montserrat-regular', sans-serif;
+  }
+  
+  .media-links {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: center;
+    
+  }
+  
+  h3.section-title {
+    font-family: 'montserrat-regular', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #FE9213;
+    white-space: nowrap;
+  }
+  
+  .subscribe-link img {
+    height: 46px;
+  }
+  
+  /* subscribe end */
+  /* about section */
+  
+  .about {
+    width: 60%;
+    max-width: 855px;
+    margin: 50px auto 100px auto;
+  }
+  
+  .about  h3 {
+    color: #FE9213;
+    font-size: 20px;
+    font-family: 'montserrat-regular', sans-serif;
+    text-align: center;
+    padding: 40px 0 40px 0;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: #fff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0 0 20px 0;
+    font-weight: 400;
+  }
+  
+  /* subscribe end */
+  /* cast section */
+  
+  .container-gallery {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+  }
+  
+  .gallery-item {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    overflow: hidden;
+  }
+  
+  .gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  
+  
+  
+  /*
+  
+  The following rule will only run if your browser supports CSS grid.
+  Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+  
+  */
+  
+  @supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+  }
+  
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+  }
+  
+  
+  
+  /* cast section end*/
+  /* credit section */
+  
+  .mobile-c13originals-credits {
+    display: none;
+  }
+  
+  .aboutc13,
+  .credits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    margin-top: 5em;
+    max-width: 1140px;
+  
+  }
+  .credits h3 {
+    font-family: 'montserrat-regular', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #C58201;
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  .credits p {
+    color: #FFF;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'montserrat-regular', sans-serif;
+  }
+  
+  .credits {
+    padding: 0 15em 0 15em ;
+  
+  }
+  
+  /* email section */
+  .email {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #080621;
+  }
+  
+  .social-email-capture {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  #mc_embed_signup #mc_embed_signup_scroll {
+    display: flex;
+  }
+  
+  #mc_embed_signup input.email {
+    margin-right: 20px;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(201, 201, 201, .4);
+    width: 300px !important;
+    color: #fff !important;
+  }
+  
+  input::placeholder {
+    color: #fff !important;
+  }
+  
+  #mc_embed_signup input.button {
+    background-color: #000 !important;
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, .5);
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  
+  /* email section end */
+  /* footer section */
+  
+  .footer-ghostwriter {
+    margin-bottom: 100px;
+  }
+  
+  .podcast-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100px !important;
+    width: 100%;
+    z-index: 99999999;
+    box-shadow: 0 6px 4px 4px black;
+    background-color: #333;
+    border: #000;
+    width:100%;
+    height:100%;
+    visibility: hidden;
+  }
+  
+  .podcast-player-active {
+    visibility: visible;
+  }
+  
+  /* footer section end */
+  /* media queries*/
+  @media screen and (max-width: 1100px) {
+    .container-gallery {
+      
+      padding: 0 2rem 2rem;
+    }
+    .about {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+  .full {
+    padding-top: 20px;
+  } 
+  
+  .media-links {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: center;
+    flex-direction: row;
+      flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .credits {
+    padding: 0 100px 0 100px;
+  }
+  #album-info  {
+    padding-top: 20px ;
+  }
+  .media-links {
+    padding-top: 0px;
+  }
+  .header {
+    margin-top: 40px;
+  }
+  
+  }
+  
+  
+  @media screen and (max-width: 668px) {
+  .med-img {
+    display: none;
+  }
+  .small-img {
+    display: block;
+  }
+  .container-gallery {
+    width: 90%;
+  }
+  .gallery {
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .credits {
+    padding: 0 50px 0 50px;
+  }
+  #mc_embed_signup input.email {
+    width: 200px !important;
+  }
+  #mc_embed_signup #mc_embed_signup_scroll {
+    flex-direction: column;
+  }
+  
+  input.email {
+    margin-right: 0;
+    margin-bottom: 10px;
+    border-radius: 0px !important;
+  }
+  
+  input.button {
+    width: 100% !important;
+  }
+  #mc_embed_signup input.email {
+    min-width: 290px !important;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  }
+  
+  @media screen and (max-width: 428px) {
+    .podcast-player {
+      height: 120px !important;
+    }
+    
+  }
+  
+  @media screen and (max-width: 350px) {
+  input.button {
+    width: 100% !important;
+  }
+  #mc_embed_signup input.email {
+    min-width: 190px !important;
+  }
+  }

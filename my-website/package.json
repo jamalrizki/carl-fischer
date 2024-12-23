@@ -1,0 +1,19 @@
+{
+    "name": "website",
+    "version": "1.0.0",
+    "description": "Jamal Rizki Website",
+    "main": "index.html",
+    "scripts": {
+        "build": "npm run clean ",
+        "clean": "rimraf dist"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "copyfiles": "^2.2.0",
+        "onchange": "^7.0.0",
+        "parallelshell": "3.0.1",
+        "rimraf": "^3.0.2"
+        
+    }
+}

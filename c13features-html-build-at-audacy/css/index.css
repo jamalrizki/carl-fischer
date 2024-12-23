@@ -1,0 +1,776 @@
+.main {
+  max-width: 1440px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.container {
+  overflow: hidden;
+}
+.header {
+    margin-top: 0rem;
+    height: 100%;
+    position: relative;
+    perspective: 100rem;
+    overflow: hidden;
+   
+  }
+  .banner {
+    position: absolute;
+    top: 307px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 40%;
+  }
+  .banner-1 {
+    position: absolute;
+    top: 805px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 60%;
+    opacity: 1;
+    animation: fade-1 3s;
+  }
+  .og-banner {
+    animation: scale-1 5s;
+  }
+  
+  
+  
+  
+  .img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0, 1);
+    overflow: hidden;
+  }
+  
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    
+  }
+  
+  @keyframes scale-1 {
+    0% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  } 
+  @keyframes fade-1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } 
+  
+  
+
+  /* Section 2 */
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+  }
+  .section-title {
+    padding-left: 3%;
+    padding-bottom: 32px;
+    
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+  }
+  
+  .card {
+    width: 760px;
+    height: 428px;
+    margin: 0rem 1.5rem;
+    background-color: #000;
+    padding: 1rem;
+    box-shadow: 0.6rem 0.6rem 0.6rem rgb(0, 0, 0);
+    position: relative;
+    transition: box-shadow 0.5s;
+  }
+  
+  
+  .overlay {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin: 0 10px;
+    background-color: #000;
+    padding: 20px;
+    display: none;
+    text-align: left;
+    background: rgba(34, 34, 34, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 60%;
+    color: white;
+    font-size: 1rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  
+  .card-img {
+    width: 100%;
+    opacity: 1;
+    
+  }
+  
+  .card:hover .card-img {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+  .overlay h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #eee;
+    ;
+  }
+  .overlay p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #eee;
+    width: 80%;
+    margin-top: 10px;
+    
+  }
+  .overlay button {
+    width: 80px;
+    height: 30px;
+    background-color: #c29525;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+    color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    visibility: hidden;
+    margin-top: 10px;
+    
+  }
+  .card:hover .overlay {
+    top:50%;
+  }
+  .card:hover .overlay button {
+  
+    visibility: visible;
+    animation: fadeIn linear .5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  .overlay button:hover {
+    background-color: #000;
+      border: 1px solid #c29525;
+  }
+  /* End of Section 2 */
+
+
+  /* Section 3 */
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem 132px 10rem;
+    background-color: black;
+  }
+  
+  .cards-wrapper-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    
+  }
+  
+  .card-1 {
+    padding: 0px 10px;
+    position: relative;
+    
+    
+  }
+  
+  .card-img-wrapper-1 {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+   
+  }
+  
+  .card-img-wrapper-1 img {
+    width: 430px;
+    height: 295px;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.3s;
+    
+  }
+  
+  .card-1:hover .card-img-wrapper-1 img {
+    opacity: 0.5;
+  }
+  
+  .card-info-1 {
+    position: absolute;
+    bottom: -45px;
+    padding: 0 0 15px 25px;
+    text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+  }
+  
+  
+  
+  
+  .card-info-1 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #eee;
+  }
+  
+  
+  .card-info-1 p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #eee;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .card-info-1 button {
+    width: 5rem;
+    height: 1.5rem;
+    background-color: #c29525;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .6rem;
+    line-height: .6rem;
+    color: #eee;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    visibility: hidden;
+
+  }
+
+  .card-info-1:hover {
+    bottom: 0px;
+
+  }
+  .card-info-1:hover button {
+    visibility: visible;
+    animation: fadeIn linear .5s;
+  }
+  .card-info-1 button:hover {
+    background-color: #000;
+        border: 1px solid #c29525;
+       
+  }
+  .card-info-1 a:focus button {
+    visibility: visible;
+  }
+  .overlay a:focus button {
+    visibility: visible;
+  }
+
+  /* End of Section 3 */
+ @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+
+ 
+@media (max-width: 1800px) {
+  .banner-1 {
+  top:700px
+  }
+}
+@media (max-width: 1500px) {
+  .banner-1 {
+  top:600px;
+  }
+  .banner {
+    top:250px; 
+  }
+}
+  
+  @media (max-width: 1400px) {
+
+    .section-2 {
+        height: auto;
+        
+       
+      }
+      .cards-wrapper-1 {
+        flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+      
+      }
+      .card-1 {
+        margin: 4rem 0rem;
+      }
+      .section-title {
+        padding-left: 3%;
+        font-size: 25px;
+
+      }
+      .overlay h2 {
+        font-size: 22px;
+      }
+      .overlay p {
+        font-size: 16px;
+      }
+      .card-info-1 h2 {
+        font-size: 22px;
+      }
+      .card-info-1 p {
+        font-size: 16px;
+      }
+      
+    
+  
+  
+  }
+  @media (max-width: 1300px) {
+
+    .info {
+        padding-bottom: 132px;
+      }
+      .banner-1 {
+        top: 500px;
+      }
+      .header {
+        height: 900px;
+        
+      
+      }
+      .overlay {
+        top: 50%;
+      }
+      .card:hover .overlay {
+        top:40%;
+      }
+      
+
+
+        
+  }
+  @media (max-width: 1200px) {
+    .overlay {
+      top: 45%;
+    }
+  }
+  @media (max-width: 1100px) {
+    .overlay {
+      top: 40%;
+    }
+    .header {
+      height: 700px;
+         
+    }
+    .banner-1 {
+      top: 450px;
+    }
+    .banner {
+      top: 200px;
+    }
+  }
+  @media (max-width: 1040px) {
+  .card-info-1 {
+    bottom: 0;
+  }
+  .card-info-1 button {
+    visibility: visible;
+  }
+  .overlay button {
+    visibility: visible;
+  }
+  .overlay {
+    top: 30%;
+  }
+  .card:hover .overlay {
+    top:25%;
+  }
+  
+}
+
+  
+  @media (max-width: 900px) {
+    .header {
+      margin-top: 70px;
+    }
+    .banner {
+      top: 20%
+    }
+    .img-wrapper img {
+      
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        opacity: 1;
+        animation: scale 5s;
+      }
+      
+      .cards-wrapper-1 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        
+      }
+      
+      .cards-wrapper {
+        flex-wrap: wrap;
+      }
+    
+      .banner-1 {
+        top: 65%;
+      }
+      .header {
+        height: 600px;
+           
+      }
+      .section-title {
+        font-size: 20px;
+        padding-left: 7%;
+      }
+      .overlay {
+        top: 58%;
+      }
+      .card:hover .overlay {
+        top:58%;
+      }
+      .overlay p {
+        font-size: 14px;
+      }
+      .overlay h2 {
+        font-size: 20px;
+      }
+      .card-info-1 h2 {
+        font-size: 20px;
+      }
+      .card-info-1 p {
+        font-size: 14px;
+      }
+      .info {
+        margin-top: -100px;
+      }
+  }
+  @media (max-width: 800px) {
+    .overlay {
+      top: 58%;
+    }
+    .card:hover .overlay {
+      top:58%;
+    }
+  } 
+  
+  @media (max-width: 700px) {
+
+
+    .section-2 {
+        height: auto;
+      }
+    .img-wrapper img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        opacity: 1;
+        animation: scale 5s;
+      }
+      .overlay {
+        top: 48%;
+      }
+      .card:hover .overlay {
+        top:48%;
+      }
+      .info {
+        margin-top: -150px;
+      }
+      .banner-1 {
+        top: 300px
+      }
+      
+      .banner {
+        top: 150px
+      }
+      .header {
+        height: 500px;
+      }
+  
+  }
+  @media (max-width: 600px) {
+
+    .img-wrapper img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        opacity: 1;
+        animation: scale 5s;
+      }
+      
+      
+      .overlay {
+        top: 38%;
+      }
+      .card:hover .overlay {
+        top:38%;
+      }
+      .banner-1 {
+        top: 250px
+      }
+      
+      .banner {
+        top: 100px
+      }
+    
+  
+  }
+  
+  @media (max-width: 500px) {
+
+    .img-wrapper img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        opacity: 1;
+        animation: scale 5s;
+      }
+  
+    .banner-heading span {
+      font-size: 4.5rem;
+      letter-spacing: 2rem;
+    }
+    .banner-paragraph {
+        width: 35rem;
+        font-size: 3rem;
+      }
+    @keyframes animateHeading {
+      0% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 2rem;
+      }
+  
+      3% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1rem;
+      }
+  
+      25% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1rem;
+      }
+  
+      28% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 2rem;
+      }
+  
+      100% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 2rem;
+      }
+    }
+    .overlay {
+      top: 50%;
+      margin:0;
+     
+    }
+    .card:hover .overlay {
+      top:50%;
+    }
+    .card-img-wrapper-1 img {
+      width: 405px;
+      height: auto;
+      object-fit: cover;
+      opacity: 1;
+      transition: opacity 0.3s;
+      
+    }
+    .header {
+      height: 400px;
+    }
+    .banner {
+      width: 250px;
+    }
+    .banner {
+      top: 80px;
+    }
+    .banner-1 {
+      top: 250px;
+      width: 350px;
+    }
+    .section-title {
+      font-size: 16px;
+      padding: 0px 0px 0px 40px;
+    }
+  
+  }
+
+  @media (max-width: 414px) {
+
+  
+    .banner-heading span {
+      font-size: 4.5rem;
+      letter-spacing: 2rem;
+    }
+    .banner-paragraph {
+        width: 25rem;
+        font-size: 3rem;
+      }
+    @keyframes animateHeading {
+      0% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 2rem;
+      }
+  
+      3% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1rem;
+      }
+  
+      25% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1rem;
+      }
+  
+      28% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 2rem;
+      }
+  
+      100% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 2rem;
+      }
+      
+    }
+    .overlay {
+      top: 40%;
+      margin:0;
+     
+    }
+    .card:hover .overlay {
+      top:50%;
+    }
+    .card-img-wrapper-1 img {
+      width: 350px;
+      height: auto;
+      object-fit: cover;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    .card {
+      margin: 0px;
+    }
+    .section-title {
+      font-size: 16px;
+      padding: 0px 0px 0px 14px;
+    }
+    .overlay {
+      top: 50%;
+    }
+  
+
+    
+  }
+ 
+  @media (max-width: 350px) {
+
+  
+    .banner-heading span {
+      font-size: 4.5rem;
+      letter-spacing: 2rem;
+    }
+  
+    @keyframes animateHeading {
+      0% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 2rem;
+      }
+  
+      3% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1rem;
+      }
+  
+      25% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1rem;
+      }
+  
+      28% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 2rem;
+      }
+  
+      100% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 2rem;
+      }
+    }
+    .card-img-wrapper-1 img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    .overlay {
+      top:45%;
+    }
+    .banner {
+      width: 200px;
+    }
+    .banner-1 {
+      width: 300px;
+    }
+
+
+  
+    
+  
+    
+  }

@@ -1,0 +1,11 @@
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 400 /400.shtml
+ErrorDocument 401 /401.shtml
+ErrorDocument 403 /403.shtml
+ErrorDocument 404 /404.shtml
+ErrorDocument 413 /413.shtml
+ErrorDocument 500 /500.shtml
+RewriteOptions inherit
+RewriteEngine on
+RewriteRule /treat/ /treat/index.html [R=301,L]
